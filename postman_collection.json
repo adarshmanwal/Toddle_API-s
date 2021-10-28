@@ -1,0 +1,295 @@
+{
+    "info": {
+    "_postman_id": "c0a48c70-4bc6-4ca5-8bb1-357e3eecdcfc",
+    "name": "Toddle_API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+    {
+    "name": "Tutor login",
+    "id": "99df4959-9c78-4cd1-ab07-f7e22090c902",
+    "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n    \"username\": \"manwal\",\n    \"password\": \"123456\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": "localhost:8000/auth/tutor/login/"
+    },
+    "response": []
+    },
+    {
+    "name": "Tutor Profile",
+    "id": "12326e2a-5a48-4c5d-a83f-3385f8d3d0bd",
+    "request": {
+    "method": "GET",
+    "header": [
+    {
+    "key": "Authorization",
+    "value": "Barrer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyX3R5cGUiOiJ0dXRvciIsImV4cCI6MTYzNTQwMjg4NSwiaWF0IjoxNjM1NDAxMDg1fQ.QDbFgZM_HZLXK7zca2pqCEJ30NVAiThfj9RCLdcSyTE",
+    "type": "text"
+    }
+    ],
+    "url": "localhost:8000/auth/tutor/profile"
+    },
+    "response": []
+    },
+    {
+    "name": "Student login",
+    "id": "384ebd80-3446-4f51-8ad1-17a70df47870",
+    "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n    \"username\": \"adarsh\",\n    \"password\": \"123456\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": "localhost:8000/auth/student/login/"
+    },
+    "response": []
+    },
+    {
+    "name": "Student Profile",
+    "id": "100f71de-b267-4c44-b927-7d5284ed0f89",
+    "request": {
+    "method": "GET",
+    "header": [
+    {
+    "key": "Authorization",
+    "value": "Barrer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyX3R5cGUiOiJzdHVkZW50IiwiZXhwIjoxNjM1Mzk5MzE2LCJpYXQiOjE2MzUzOTc1MTZ9.4FkO7P9FJrhTsI3dVBxEb62ScOPV8m6r4PQn14ocFao",
+    "type": "text"
+    }
+    ],
+    "url": "localhost:8000/auth/student/profile"
+    },
+    "response": []
+    },
+    {
+    "name": "Cerate Assignment",
+    "id": "16fb02b5-c893-43c8-bf09-5cad26b49ed0",
+    "request": {
+    "method": "POST",
+    "header": [
+    {
+    "key": "Authorization",
+    "value": "Barrer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyX3R5cGUiOiJ0dXRvciIsImV4cCI6MTYzNTQwNDQ2NywiaWF0IjoxNjM1NDAyNjY3fQ.ZdHQV5AHQHMJS-VLYOTgCmQy_CR-GugI1s8hnmIJ8jo",
+    "type": "text"
+    }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n    \"description\": \"first assignment\",\n    \"dead_line_date\": \"2021-12-6\",\n    \"published_at\": \"2021-10-21\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": "localhost:8000/auth/assignment"
+    },
+    "response": []
+    },
+    {
+    "name": "Get Assignment",
+    "id": "47387c49-e3f8-4243-af3a-2309d8d4f1cc",
+    "protocolProfileBehavior": {
+    "disableBodyPruning": true
+    },
+    "request": {
+    "method": "GET",
+    "header": [
+    {
+    "key": "Authorization",
+    "value": "Barrer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyX3R5cGUiOiJzdHVkZW50IiwiZXhwIjoxNjM1NDA3MzczLCJpYXQiOjE2MzU0MDU1NzN9.JX1S-TzGmmwgTDoODW5UA0lGOv1WN9NaB0BpAhs7zK8",
+    "type": "text"
+    }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": "localhost:8000/auth/assignment"
+    },
+    "response": []
+    },
+    {
+    "name": "Delete Assignment",
+    "id": "1ff888b6-bca4-4568-b92c-f63df06cce66",
+    "request": {
+    "method": "DELETE",
+    "header": [
+    {
+    "key": "Authorization",
+    "value": "Barrer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VyX3R5cGUiOiJ0dXRvciIsImV4cCI6MTYzNTM0NTEyOCwiaWF0IjoxNjM1MzQzMzI4fQ.Ka2tJ3gOeqjrgoQNeb1Cy6xoqjNMkDx2hxBDytyTFkw",
+    "type": "text"
+    }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n    \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": "localhost:8000/auth/assignment/delete/6"
+    },
+    "response": []
+    },
+    {
+    "name": "Uppdate Assignment",
+    "id": "decc5ee5-47de-42e6-97a3-ffa33c314f88",
+    "request": {
+    "method": "PUT",
+    "header": [
+    {
+    "key": "Authorization",
+    "value": "Barrer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyX3R5cGUiOiJ0dXRvciIsImV4cCI6MTYzNTM5OTMzOSwiaWF0IjoxNjM1Mzk3NTM5fQ.SJV-mZfwOO-V6WXAETFPfw1wpVl7GGoa3Frng44S-gQ",
+    "type": "text"
+    }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n    \"dead_line_date\": \"2025-12-6\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": "localhost:8000/auth/assignment/update/1"
+    },
+    "response": []
+    },
+    {
+    "name": "Submit assignment",
+    "id": "b18f74ca-1b27-4fba-ab57-98698861c988",
+    "request": {
+    "method": "POST",
+    "header": [
+    {
+    "key": "Authorization",
+    "value": "Barrer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyX3R5cGUiOiJ0dXRvciIsImV4cCI6MTYzNTQwODI0NCwiaWF0IjoxNjM1NDA2NDQ0fQ.oyiOJeckvii80DRlv-75rjgZLVx0H2BROhCKXCWAVls",
+    "type": "text"
+    }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n    \"status\": \"assignment is submited \"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": "localhost:8000/auth/assignment/submit/7"
+    },
+    "response": []
+    },
+    {
+    "name": "Get Assignment filter published at",
+    "id": "1c1dd018-0735-45e1-80be-02ac8cb0f634",
+    "protocolProfileBehavior": {
+    "disableBodyPruning": true
+    },
+    "request": {
+    "method": "GET",
+    "header": [
+    {
+    "key": "Authorization",
+    "value": "Barrer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyX3R5cGUiOiJzdHVkZW50IiwiZXhwIjoxNjM1NDA3MzczLCJpYXQiOjE2MzU0MDU1NzN9.JX1S-TzGmmwgTDoODW5UA0lGOv1WN9NaB0BpAhs7zK8",
+    "type": "text"
+    }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "localhost:8000/auth/assignment?published_at=ongoing",
+    "host": [
+    "localhost"
+    ],
+    "port": "8000",
+    "path": [
+    "auth",
+    "assignment"
+    ],
+    "query": [
+    {
+    "key": "published_at",
+    "value": "ongoing"
+    }
+    ]
+    }
+    },
+    "response": []
+    },
+    {
+    "name": "Get Assignment filter status",
+    "id": "c113145a-5f4a-4f9d-94fc-551bf3f8b626",
+    "protocolProfileBehavior": {
+    "disableBodyPruning": true
+    },
+    "request": {
+    "method": "GET",
+    "header": [
+    {
+    "key": "Authorization",
+    "value": "Barrer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyX3R5cGUiOiJzdHVkZW50IiwiZXhwIjoxNjM1NDA3MzczLCJpYXQiOjE2MzU0MDU1NzN9.JX1S-TzGmmwgTDoODW5UA0lGOv1WN9NaB0BpAhs7zK8",
+    "type": "text"
+    }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "localhost:8000/auth/assignment?stauts=pending",
+    "host": [
+    "localhost"
+    ],
+    "port": "8000",
+    "path": [
+    "auth",
+    "assignment"
+    ],
+    "query": [
+    {
+    "key": "stauts",
+    "value": "pending"
+    }
+    ]
+    }
+    },
+    "response": []
+    }
+    ]
+    }
