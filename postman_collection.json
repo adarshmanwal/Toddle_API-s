@@ -13,14 +13,14 @@
     "header": [],
     "body": {
     "mode": "raw",
-    "raw": "{\n    \"username\": \"manwal\",\n    \"password\": \"123456\"\n}",
+    "raw": "{\n    \"username\": \"adarsh\",\n    \"password\": \"123456\"\n}",
     "options": {
     "raw": {
     "language": "json"
     }
     }
     },
-    "url": "localhost:8000/auth/tutor/login/"
+    "url": "https://toddleapi.herokuapp.com/auth/tutor/login/"
     },
     "response": []
     },
@@ -32,11 +32,11 @@
     "header": [
     {
     "key": "Authorization",
-    "value": "Barrer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyX3R5cGUiOiJ0dXRvciIsImV4cCI6MTYzNTQwMjg4NSwiaWF0IjoxNjM1NDAxMDg1fQ.QDbFgZM_HZLXK7zca2pqCEJ30NVAiThfj9RCLdcSyTE",
+    "value": "Barrer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VyX3R5cGUiOiJ0dXRvciIsImV4cCI6MTYzNTQyMjQ5OCwiaWF0IjoxNjM1NDIwNjk4fQ.2FJuLm1rIW81RXw5QAN6NhtFr7Gc3tiDgN2MlJqUNhs",
     "type": "text"
     }
     ],
-    "url": "localhost:8000/auth/tutor/profile"
+    "url": "https://toddleapi.herokuapp.com/auth/tutor/profile"
     },
     "response": []
     },
@@ -55,7 +55,7 @@
     }
     }
     },
-    "url": "localhost:8000/auth/student/login/"
+    "url": "https://toddleapi.herokuapp.com/auth/student/login/"
     },
     "response": []
     },
@@ -67,11 +67,11 @@
     "header": [
     {
     "key": "Authorization",
-    "value": "Barrer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyX3R5cGUiOiJzdHVkZW50IiwiZXhwIjoxNjM1Mzk5MzE2LCJpYXQiOjE2MzUzOTc1MTZ9.4FkO7P9FJrhTsI3dVBxEb62ScOPV8m6r4PQn14ocFao",
+    "value": "Barrer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyX3R5cGUiOiJzdHVkZW50IiwiZXhwIjoxNjM1NDIyNTQwLCJpYXQiOjE2MzU0MjA3NDB9.EUbeGd7-99d1dqBD-SA5ljCbINyStz1XCMSewtkUBGc",
     "type": "text"
     }
     ],
-    "url": "localhost:8000/auth/student/profile"
+    "url": "https://toddleapi.herokuapp.com/auth/student/profile"
     },
     "response": []
     },
@@ -96,7 +96,7 @@
     }
     }
     },
-    "url": "localhost:8000/auth/assignment"
+    "url": "https://toddleapi.herokuapp.com/auth/assignment"
     },
     "response": []
     },
@@ -124,7 +124,7 @@
     }
     }
     },
-    "url": "localhost:8000/auth/assignment"
+    "url": "https://toddleapi.herokuapp.com/auth/assignment"
     },
     "response": []
     },
@@ -149,7 +149,7 @@
     }
     }
     },
-    "url": "localhost:8000/auth/assignment/delete/6"
+    "url": "https://toddleapi.herokuapp.com/auth/assignment/delete/6"
     },
     "response": []
     },
@@ -174,7 +174,7 @@
     }
     }
     },
-    "url": "localhost:8000/auth/assignment/update/1"
+    "url": "https://toddleapi.herokuapp.com/auth/assignment/update/1"
     },
     "response": []
     },
@@ -199,7 +199,7 @@
     }
     }
     },
-    "url": "localhost:8000/auth/assignment/submit/7"
+    "url": "https://toddleapi.herokuapp.com/auth/assignment/submit/7"
     },
     "response": []
     },
@@ -214,7 +214,7 @@
     "header": [
     {
     "key": "Authorization",
-    "value": "Barrer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyX3R5cGUiOiJzdHVkZW50IiwiZXhwIjoxNjM1NDA3MzczLCJpYXQiOjE2MzU0MDU1NzN9.JX1S-TzGmmwgTDoODW5UA0lGOv1WN9NaB0BpAhs7zK8",
+    "value": "Barrer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyX3R5cGUiOiJ0dXRvciIsImV4cCI6MTYzNTQxMDA3MSwiaWF0IjoxNjM1NDA4MjcxfQ.c-VLh6vydRyuzXhAcxKo2_dfqO6MOJdd9Yask3kW3ro",
     "type": "text"
     }
     ],
@@ -228,11 +228,13 @@
     }
     },
     "url": {
-    "raw": "localhost:8000/auth/assignment?published_at=ongoing",
+    "raw": "https://toddleapi.herokuapp.com/auth/assignment?published_at=ongoing",
+    "protocol": "https",
     "host": [
-    "localhost"
+    "toddleapi",
+    "herokuapp",
+    "com"
     ],
-    "port": "8000",
     "path": [
     "auth",
     "assignment"
@@ -272,11 +274,13 @@
     }
     },
     "url": {
-    "raw": "localhost:8000/auth/assignment?stauts=pending",
+    "raw": "https://toddleapi.herokuapp.com/auth/assignment?stauts=pending",
+    "protocol": "https",
     "host": [
-    "localhost"
+    "toddleapi",
+    "herokuapp",
+    "com"
     ],
-    "port": "8000",
     "path": [
     "auth",
     "assignment"
